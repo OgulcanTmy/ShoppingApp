@@ -11,9 +11,6 @@
 		905686C02918518A00DE6472 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905686BF2918518A00DE6472 /* Encodable+Extensions.swift */; };
 		905686C22918520600DE6472 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905686C12918520600DE6472 /* UIViewController+Extensions.swift */; };
 		905686C4291853EF00DE6472 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 905686C3291853EF00DE6472 /* GoogleService-Info.plist */; };
-		908DEEF72917F50800C4F228 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEEF52917F50800C4F228 /* MainViewController.swift */; };
-		908DEEF82917F50800C4F228 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908DEEF62917F50800C4F228 /* MainViewController.xib */; };
-		908DEEFB2917F55C00C4F228 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEEFA2917F55C00C4F228 /* MainViewModel.swift */; };
 		908DEF0B2917F7BA00C4F228 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEF092917F7BA00C4F228 /* BasketViewController.swift */; };
 		908DEF0C2917F7BA00C4F228 /* BasketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908DEF0A2917F7BA00C4F228 /* BasketViewController.xib */; };
 		908DEF0F2917F7CA00C4F228 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEF0E2917F7CA00C4F228 /* BasketViewModel.swift */; };
@@ -57,9 +54,6 @@
 		905686BF2918518A00DE6472 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		905686C12918520600DE6472 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		905686C3291853EF00DE6472 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		908DEEF52917F50800C4F228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		908DEEF62917F50800C4F228 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../Controller/MainViewController.xib; sourceTree = "<group>"; };
-		908DEEFA2917F55C00C4F228 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		908DEF092917F7BA00C4F228 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		908DEF0A2917F7BA00C4F228 /* BasketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketViewController.xib; sourceTree = "<group>"; };
 		908DEF0E2917F7CA00C4F228 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
@@ -356,37 +350,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		90B38B102917F46200C2F3E9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		90B38B112917F46600C2F3E9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				908DEEF62917F50800C4F228 /* MainViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		90B38B122917F49100C2F3E9 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				908DEEFA2917F55C00C4F228 /* MainViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		90B38B132917F49700C2F3E9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				908DEEF52917F50800C4F228 /* MainViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		90BED32A2917EC000036FA21 = {
 			isa = PBXGroup;
 			children = (
@@ -433,7 +396,6 @@
 				90BED3522917EFE00036FA21 /* Search */,
 				90BED3512917EFDB0036FA21 /* Products */,
 				90BED3502917EFD60036FA21 /* Basket */,
-				90BED34F2917EFCD0036FA21 /* Main */,
 				90BED34E2917EFC20036FA21 /* Authentication */,
 				90BED34D2917EFBB0036FA21 /* Onboarding */,
 				90BED34C2917EFAB0036FA21 /* Splash */,
@@ -471,17 +433,6 @@
 				90A0E5862917F25400B371E9 /* View */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		90BED34F2917EFCD0036FA21 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				90B38B132917F49700C2F3E9 /* Controller */,
-				90B38B122917F49100C2F3E9 /* ViewModel */,
-				90B38B112917F46600C2F3E9 /* View */,
-				90B38B102917F46200C2F3E9 /* Model */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		90BED3502917EFD60036FA21 /* Basket */ = {
@@ -650,7 +601,6 @@
 				905686C4291853EF00DE6472 /* GoogleService-Info.plist in Resources */,
 				90BED3402917EC020036FA21 /* Assets.xcassets in Resources */,
 				90A0E5852917F19F00B371E9 /* OnboardingCollectionViewCell.xib in Resources */,
-				908DEEF82917F50800C4F228 /* MainViewController.xib in Resources */,
 				908DEF1D2917F82500C4F228 /* ProductsViewController.xib in Resources */,
 				90A0E57C2917F10F00B371E9 /* OnboardingViewController.xib in Resources */,
 				908DEF242917F84400C4F228 /* ProductsCollectionViewCell.xib in Resources */,
@@ -733,8 +683,6 @@
 				90A13C4129180F6D00C6088D /* SplashViewModel.swift in Sources */,
 				90A0E57B2917F10F00B371E9 /* OnboardingViewController.swift in Sources */,
 				908DEF232917F84400C4F228 /* ProductsCollectionViewCell.swift in Sources */,
-				908DEEF72917F50800C4F228 /* MainViewController.swift in Sources */,
-				908DEEFB2917F55C00C4F228 /* MainViewModel.swift in Sources */,
 				908DEF382917F92100C4F228 /* ProfileViewModel.swift in Sources */,
 				908DEF142917F7EC00C4F228 /* BasketTableViewCell.swift in Sources */,
 			);

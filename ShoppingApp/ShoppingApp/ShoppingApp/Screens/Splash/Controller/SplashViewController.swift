@@ -10,6 +10,13 @@ import UIKit
 class SplashViewController: UIViewController {
     
     private let viewModel = SplashViewModel()
+    private let tabBarConstants = Constants.TabBar.self
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.navigationBar.isHidden = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +36,30 @@ class SplashViewController: UIViewController {
     
     func navigateToOnboarding() {
         let vc = OnboardingViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func navigateToLogin() {
         let vc = AuthenticationViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func navigateToMain() {
-        let vc = MainViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        let productsViewController = ProductsViewController()
+        let searchViewController = SearchViewController()
+        let profileViewController = ProfileViewController()
+
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [productsViewController,
+                                            searchViewController,
+                                            profileViewController]
+        tabBarController.tabBar.tintColor = .black
+        tabBarController.viewControllers?[0].tabBarItem.title = tabBarConstants.products
+        tabBarController.viewControllers?[0].tabBarItem.image = UIImage(named: tabBarConstants.productsIcon)
+        tabBarController.viewControllers?[1].tabBarItem.title = tabBarConstants.search
+        tabBarController.viewControllers?[1].tabBarItem.image = UIImage(named: tabBarConstants.searchIcon)
+        tabBarController.viewControllers?[2].tabBarItem.title = tabBarConstants.profile
+        tabBarController.viewControllers?[2].tabBarItem.image = UIImage(named: tabBarConstants.profileIcon)
+        navigationController?.pushViewController(tabBarController, animated: true)
     }
 }
