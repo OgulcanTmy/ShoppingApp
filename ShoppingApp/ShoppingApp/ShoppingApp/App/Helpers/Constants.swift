@@ -11,6 +11,7 @@ enum Constants {
     enum Defaults {
         static let isPassedOnboarding = "isPassedOnboarding"
         static let isLoggedIn = "isLoggedIn"
+        static let uid = "uid"
     }
     
     enum Onboarding {
@@ -25,5 +26,15 @@ enum Constants {
         
         static let image1 = "onboarding1"
         static let image2 = "onboarding2"
+    }
+
+    enum Authentication {
+        static let register = "Kayıt Ol"
+        static let haveAccount = "Hesabın var mı? Giriş yap"
+
+        static let login = "Giriş Yap"
+        static let dontHaveAccount = "Hesabın yok mu? Kayıt ol"
+
+        static let users = "users"
     }
 }

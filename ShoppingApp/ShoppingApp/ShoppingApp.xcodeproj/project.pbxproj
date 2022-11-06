@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902898CA29184BB000610400 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902898C929184BB000610400 /* UserModel.swift */; };
+		905686C02918518A00DE6472 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905686BF2918518A00DE6472 /* Encodable+Extensions.swift */; };
+		905686C22918520600DE6472 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905686C12918520600DE6472 /* UIViewController+Extensions.swift */; };
+		905686C4291853EF00DE6472 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 905686C3291853EF00DE6472 /* GoogleService-Info.plist */; };
 		908DEEF72917F50800C4F228 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEEF52917F50800C4F228 /* MainViewController.swift */; };
 		908DEEF82917F50800C4F228 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908DEEF62917F50800C4F228 /* MainViewController.xib */; };
 		908DEEFB2917F55C00C4F228 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DEEFA2917F55C00C4F228 /* MainViewModel.swift */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		6E2308BF55F8F680930A3920 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BE59889B47EDC51D3E3205 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		902898C929184BB000610400 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		905686BF2918518A00DE6472 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		905686C12918520600DE6472 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		905686C3291853EF00DE6472 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		908DEEF52917F50800C4F228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		908DEEF62917F50800C4F228 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../Controller/MainViewController.xib; sourceTree = "<group>"; };
 		908DEEFA2917F55C00C4F228 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +117,14 @@
 				FE7137D293726BEEFCC31886 /* Pods-ShoppingApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		902898C829184BA500610400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				902898C929184BB000610400 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		908DEF052917F78800C4F228 /* Model */ = {
@@ -274,6 +290,7 @@
 		908DEF3C2917F97A00C4F228 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				905686C3291853EF00DE6472 /* GoogleService-Info.plist */,
 				90BED3442917EC020036FA21 /* Info.plist */,
 			);
 			path = Plists;
@@ -325,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				90A13C3D29180DEC00C6088D /* Constants.swift */,
+				905686BF2918518A00DE6472 /* Encodable+Extensions.swift */,
+				905686C12918520600DE6472 /* UIViewController+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -446,6 +465,7 @@
 		90BED34E2917EFC20036FA21 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				902898C829184BA500610400 /* Model */,
 				90A0E5882917F2CA00B371E9 /* Controller */,
 				90A0E5872917F2B800B371E9 /* ViewModel */,
 				90A0E5862917F25400B371E9 /* View */,
@@ -627,6 +647,7 @@
 			files = (
 				908DEF362917F91800C4F228 /* ProfileViewController.xib in Resources */,
 				90BED3432917EC020036FA21 /* LaunchScreen.storyboard in Resources */,
+				905686C4291853EF00DE6472 /* GoogleService-Info.plist in Resources */,
 				90BED3402917EC020036FA21 /* Assets.xcassets in Resources */,
 				90A0E5852917F19F00B371E9 /* OnboardingCollectionViewCell.xib in Resources */,
 				908DEEF82917F50800C4F228 /* MainViewController.xib in Resources */,
@@ -699,10 +720,13 @@
 				908DEF2E2917F88F00C4F228 /* SearchViewModel.swift in Sources */,
 				90A0E5802917F13400B371E9 /* OnboardingModel.swift in Sources */,
 				90B38B0C2917F38000C2F3E9 /* AuthenticationViewController.swift in Sources */,
+				902898CA29184BB000610400 /* UserModel.swift in Sources */,
 				90BED3372917EC000036FA21 /* AppDelegate.swift in Sources */,
 				908DEF0B2917F7BA00C4F228 /* BasketViewController.swift in Sources */,
 				90B38B0F2917F45C00C2F3E9 /* AuthenticationViewModel.swift in Sources */,
+				905686C22918520600DE6472 /* UIViewController+Extensions.swift in Sources */,
 				90A13C3E29180DEC00C6088D /* Constants.swift in Sources */,
+				905686C02918518A00DE6472 /* Encodable+Extensions.swift in Sources */,
 				908DEF1C2917F82500C4F228 /* ProductsViewController.swift in Sources */,
 				90A0E5842917F19F00B371E9 /* OnboardingCollectionViewCell.swift in Sources */,
 				908DEF2B2917F88400C4F228 /* SearchViewController.swift in Sources */,
