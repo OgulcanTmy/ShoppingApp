@@ -17,12 +17,12 @@ class SplashViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: viewModel.checkUserStatus)
         viewModel.changeHandler = { state in
             switch state {
-            case .navigateToMain:
-                self.navigateToMain()
-            case .navigateToLogin:
-                self.navigateToLogin()
-            case .navigateToOnboarding:
-                self.navigateToOnboarding()
+                case .navigateToMain:
+                    self.navigateToMain()
+                case .navigateToLogin:
+                    self.navigateToLogin()
+                case .navigateToOnboarding:
+                    self.navigateToOnboarding()
             }
         }
     }
