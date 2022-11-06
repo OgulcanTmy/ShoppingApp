@@ -56,8 +56,7 @@ class OnboardingViewController: UIViewController {
     
     func navigateToLogin() {
         let vc = AuthenticationViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedSkipButton(_ sender: Any) {

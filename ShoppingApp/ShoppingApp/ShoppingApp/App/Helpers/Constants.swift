@@ -37,4 +37,15 @@ enum Constants {
 
         static let users = "users"
     }
+
+    enum TabBar {
+        static let products = "Ürünler"
+        static let productsIcon = "homeIcon"
+
+        static let search = "Ara"
+        static let searchIcon = "searchIcon"
+
+        static let profile = "Profil"
+        static let profileIcon = "profileIcon"
+    }
 }
