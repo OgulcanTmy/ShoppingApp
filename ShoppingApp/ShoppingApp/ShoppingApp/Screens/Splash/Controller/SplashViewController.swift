@@ -8,22 +8,40 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
+    
+    private let viewModel = SplashViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: viewModel.checkUserStatus)
+        viewModel.changeHandler = { state in
+            switch state {
+            case .navigateToMain:
+                self.navigateToMain()
+            case .navigateToLogin:
+                self.navigateToLogin()
+            case .navigateToOnboarding:
+                self.navigateToOnboarding()
+            }
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func navigateToOnboarding() {
+        let vc = OnboardingViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
-    */
-
+    
+    func navigateToLogin() {
+        let vc = AuthenticationViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func navigateToMain() {
+        let vc = MainViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
 }

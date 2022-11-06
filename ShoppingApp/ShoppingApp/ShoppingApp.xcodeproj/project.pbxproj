@@ -32,6 +32,8 @@
 		90A0E5802917F13400B371E9 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0E57F2917F13400B371E9 /* OnboardingModel.swift */; };
 		90A0E5842917F19F00B371E9 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0E5822917F19F00B371E9 /* OnboardingCollectionViewCell.swift */; };
 		90A0E5852917F19F00B371E9 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A0E5832917F19F00B371E9 /* OnboardingCollectionViewCell.xib */; };
+		90A13C3E29180DEC00C6088D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A13C3D29180DEC00C6088D /* Constants.swift */; };
+		90A13C4129180F6D00C6088D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A13C4029180F6D00C6088D /* SplashViewModel.swift */; };
 		90B38B0C2917F38000C2F3E9 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38B0A2917F38000C2F3E9 /* AuthenticationViewController.swift */; };
 		90B38B0D2917F38000C2F3E9 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B38B0B2917F38000C2F3E9 /* AuthenticationViewController.xib */; };
 		90B38B0F2917F45C00C2F3E9 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38B0E2917F45C00C2F3E9 /* AuthenticationViewModel.swift */; };
@@ -41,9 +43,12 @@
 		90BED3432917EC020036FA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BED3412917EC020036FA21 /* LaunchScreen.storyboard */; };
 		90BED3562917F06D0036FA21 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BED3542917F06D0036FA21 /* SplashViewController.swift */; };
 		90BED3572917F06D0036FA21 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BED3552917F06D0036FA21 /* SplashViewController.xib */; };
+		F7A816C8441B9B6F62C5A82E /* Pods_ShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2308BF55F8F680930A3920 /* Pods_ShoppingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E2308BF55F8F680930A3920 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BE59889B47EDC51D3E3205 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		908DEEF52917F50800C4F228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		908DEEF62917F50800C4F228 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../Controller/MainViewController.xib; sourceTree = "<group>"; };
 		908DEEFA2917F55C00C4F228 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +74,8 @@
 		90A0E57F2917F13400B371E9 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		90A0E5822917F19F00B371E9 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		90A0E5832917F19F00B371E9 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		90A13C3D29180DEC00C6088D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		90A13C4029180F6D00C6088D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		90B38B0A2917F38000C2F3E9 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		90B38B0B2917F38000C2F3E9 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthenticationViewController.xib; path = ../Controller/AuthenticationViewController.xib; sourceTree = "<group>"; };
 		90B38B0E2917F45C00C2F3E9 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -77,9 +84,10 @@
 		90BED33D2917EC000036FA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90BED33F2917EC020036FA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BED3422917EC020036FA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		90BED3442917EC020036FA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BED3442917EC020036FA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ShoppingApp/App/Plists/Info.plist; sourceTree = SOURCE_ROOT; };
 		90BED3542917F06D0036FA21 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		90BED3552917F06D0036FA21 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		FE7137D293726BEEFCC31886 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A816C8441B9B6F62C5A82E /* Pods_ShoppingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +105,8 @@
 		850AA6020AB144E39E772F7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				73BE59889B47EDC51D3E3205 /* Pods-ShoppingApp.debug.xcconfig */,
+				FE7137D293726BEEFCC31886 /* Pods-ShoppingApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -252,14 +263,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		908DEF3A2917F96D00C4F228 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				908DEF3E2917F9A700C4F228 /* Network */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		908DEF3B2917F97600C4F228 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,28 +286,6 @@
 				90BED3412917EC020036FA21 /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		908DEF3E2917F9A700C4F228 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		908DEF3F2917F9B600C4F228 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				908DEF402917F9C100C4F228 /* Extensions */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		908DEF402917F9C100C4F228 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		90A0E5812917F15A00B371E9 /* Cell */ = {
@@ -338,6 +319,22 @@
 				90B38B0A2917F38000C2F3E9 /* AuthenticationViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		90A13C3C29180DE300C6088D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90A13C3D29180DEC00C6088D /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		90A13C3F29180F6300C6088D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90A13C4029180F6D00C6088D /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		90B38B102917F46200C2F3E9 /* Model */ = {
@@ -377,6 +374,7 @@
 				90BED3352917EC000036FA21 /* ShoppingApp */,
 				90BED3342917EC000036FA21 /* Products */,
 				850AA6020AB144E39E772F7C /* Pods */,
+				CE0D0D827C08850197146F13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,11 +398,10 @@
 		90BED34A2917EF920036FA21 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				908DEF3F2917F9B600C4F228 /* Utils */,
+				90A13C3C29180DE300C6088D /* Helpers */,
 				908DEF3D2917F98100C4F228 /* View */,
 				908DEF3C2917F97A00C4F228 /* Plists */,
 				908DEF3B2917F97600C4F228 /* Delegate */,
-				908DEF3A2917F96D00C4F228 /* Core */,
 				908DEF392917F95C00C4F228 /* Assets */,
 			);
 			path = App;
@@ -428,6 +425,7 @@
 		90BED34C2917EFAB0036FA21 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				90A13C3F29180F6300C6088D /* ViewModel */,
 				90BED35C2917F0A20036FA21 /* Controller */,
 				90BED35D2917F0A90036FA21 /* View */,
 			);
@@ -559,6 +557,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CE0D0D827C08850197146F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2308BF55F8F680930A3920 /* Pods_ShoppingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -566,9 +572,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90BED3472917EC020036FA21 /* Build configuration list for PBXNativeTarget "ShoppingApp" */;
 			buildPhases = (
+				ACE6DA9B37599AF454C7C344 /* [CP] Check Pods Manifest.lock */,
 				90BED32F2917EC000036FA21 /* Sources */,
 				90BED3302917EC000036FA21 /* Frameworks */,
 				90BED3312917EC000036FA21 /* Resources */,
+				99A56DA0BB8D2A2CDE4A582A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -636,6 +644,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		99A56DA0BB8D2A2CDE4A582A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE6DA9B37599AF454C7C344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShoppingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90BED32F2917EC000036FA21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -652,9 +702,11 @@
 				90BED3372917EC000036FA21 /* AppDelegate.swift in Sources */,
 				908DEF0B2917F7BA00C4F228 /* BasketViewController.swift in Sources */,
 				90B38B0F2917F45C00C2F3E9 /* AuthenticationViewModel.swift in Sources */,
+				90A13C3E29180DEC00C6088D /* Constants.swift in Sources */,
 				908DEF1C2917F82500C4F228 /* ProductsViewController.swift in Sources */,
 				90A0E5842917F19F00B371E9 /* OnboardingCollectionViewCell.swift in Sources */,
 				908DEF2B2917F88400C4F228 /* SearchViewController.swift in Sources */,
+				90A13C4129180F6D00C6088D /* SplashViewModel.swift in Sources */,
 				90A0E57B2917F10F00B371E9 /* OnboardingViewController.swift in Sources */,
 				908DEF232917F84400C4F228 /* ProductsCollectionViewCell.swift in Sources */,
 				908DEEF72917F50800C4F228 /* MainViewController.swift in Sources */,
@@ -802,13 +854,14 @@
 		};
 		90BED3482917EC020036FA21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BE59889B47EDC51D3E3205 /* Pods-ShoppingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				INFOPLIST_FILE = ShoppingApp/App/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -829,13 +882,14 @@
 		};
 		90BED3492917EC020036FA21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7137D293726BEEFCC31886 /* Pods-ShoppingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				INFOPLIST_FILE = ShoppingApp/App/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
