@@ -55,6 +55,7 @@ class OnboardingViewController: UIViewController {
     }
     
     func navigateToLogin() {
+        UserDefaults.standard.set(true, forKey: Constants.Defaults.isPassedOnboarding)
         let vc = AuthenticationViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -54,6 +54,7 @@ class AuthenticationViewController: UIViewController {
     }
 
     private func navigateToMain() {
+        UserDefaults.standard.set(true, forKey: Constants.Defaults.isLoggedIn)
         let productsViewController = ProductsViewController()
         let searchViewController = SearchViewController()
         let profileViewController = ProfileViewController()

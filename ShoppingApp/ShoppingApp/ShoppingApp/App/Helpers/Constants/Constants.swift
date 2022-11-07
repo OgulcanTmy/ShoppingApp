@@ -8,10 +8,12 @@
 import Foundation
 
 enum Constants {
+    static let cart = "basketIcon"
     enum Defaults {
         static let isPassedOnboarding = "isPassedOnboarding"
         static let isLoggedIn = "isLoggedIn"
         static let uid = "uid"
+        static let basketItems = "basketItems"
     }
     
     enum Onboarding {

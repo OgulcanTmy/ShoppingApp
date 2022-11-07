@@ -16,7 +16,7 @@ extension UIViewController {
                                                 message: message,
                                                 preferredStyle: .alert)
 
-        let defaultAction = UIAlertAction(title: "OK",
+        let defaultAction = UIAlertAction(title: "Tamam",
                                           style: .default,
                                           handler: handler)
 

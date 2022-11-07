@@ -60,6 +60,6 @@ class SplashViewController: UIViewController {
         tabBarController.viewControllers?[1].tabBarItem.image = UIImage(named: tabBarConstants.searchIcon)
         tabBarController.viewControllers?[2].tabBarItem.title = tabBarConstants.profile
         tabBarController.viewControllers?[2].tabBarItem.image = UIImage(named: tabBarConstants.profileIcon)
-        navigationController?.pushViewController(tabBarController, animated: true)
+        navigationController?.setViewControllers([tabBarController], animated: true)
     }
 }
